@@ -1,12 +1,15 @@
 # TODO Please edit the following information in your assignment
 
-- Name:
+- Name: Xin(Michelle) Geng
 - How many hours did it take you to complete this assignment?
+  Approximately 4 hours
 - Did you collaborate with any other students/TAs/Professors?
+  No
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+  - n/a
+  - n/a
 - (Optional) What was your favorite part of the assignment?
+  The reading provided an excellent recap of the knowledge in Python I've gained in the course 5001
 - (Optional) How would you improve the assignment?
 
 # Implementation Logistics
@@ -19,7 +22,7 @@
 See the folders [part1](./part1) for this assignment.
 
 # Rubric
- 
+
   <table>
   <tbody>
     <tr>
