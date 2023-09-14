@@ -5,24 +5,25 @@
  Note that there is no constructor or destructor,
  so a default one will be created for us.
 """
+from shape import Shape
 
 
-class Rectangle:
+class Rectangle(Shape):
     def __init__(self, width, height):
         self._width = width
         self._height = height
 
     def set_values(self, x, y):
-        self.width = x
-        self.height = y
+        self._width = x
+        self._height = y
 
     def area(self):
-        return self.width * self.height
+        return self._width * self._height
 
 
 if __name__ == "__main__":
     # Create a rectangle object
-    rect = Rectangle()
+    rect = Rectangle(10, 20)
 
     # Call a member function
     rect.set_values(3, 4)
