@@ -6,35 +6,33 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Drag And Draw Over The Canvas
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: user
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: to change the color of pixels on the canvas by pressing the left mouse button and dragging, creating a drawing or pattern on the canvas.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The graphics program must be running and in a responsive state. The user must have previously selected a color.
 
-**Trigger**: *an action or actions that initiate the scenario*
-  
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Trigger**: The user presses and holds the left mouse button and moves the mouse to draw on the canvas.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Scenario**: 1. The user presses and holds the left mouse button (left-click) without releasing it. 2. As the user moves the mouse while holding the left button, the application detects the mouse movement and continuously updates the pixel color beneath the cursor with the selected drawing color. 3. The user can drag the mouse to create lines, shapes, or patterns on the canvas with the selected color. 4. The user can release the left mouse button to stop drawing or continue by pressing and holding the button again. 5. If the user wishes to change the drawing color while drawing, they can do so by selecting a different color from the color palette or interface controls.
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: If the user tries to draw without selecting a drawing color, the application should provide feedback, such as an error message or a reminder to select a color first.
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: high
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: first release
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: The primary actor interacts with the system through the mouse input.
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: N/A
+
+**Channels to Secondary Actors**: N/A
+
+**Open Issues**: N/A
 
 <hr>
-
-
 
 (adapted by Pressman and Maxim, Software Engineering: A Practitioner’s Approach, pp. 151-152, from Cockburn,
 A., Writing Effective Use-Cases, Addison-Wesley, 2001)

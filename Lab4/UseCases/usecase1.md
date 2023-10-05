@@ -6,35 +6,33 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Set Window and Canvas Dimensions
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: user
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: to set the dimensions of the application window and drawable canvas to 600 pixels wide and 400 pixels high
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The graphics program must be running and in a responsive state.
 
-**Trigger**: *an action or actions that initiate the scenario*
-  
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Trigger**: The user initiates the action to set the window and canvas dimensions.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Scenario**: 1. The user navigates to the "Settings" or "Canvas Options" section of the application, where canvas and window dimensions can be configured. 2. The user inputs "600" for the width and "400" for the height of the canvas and the window. 3. The user clicks the "Apply" or "Save" button to confirm the changes.
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: If the user enters non-numeric characters or invalid dimensions (e.g., negative values), the system should display an error message and prompt the user to correct their input.
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: Medium
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: first release
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: The primary actor interacts with the system through a graphical user interface (GUI).
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: N/A
+
+**Channels to Secondary Actors**: N/A
+
+**Open Issues**: N/A
 
 <hr>
-
-
 
 (adapted by Pressman and Maxim, Software Engineering: A Practitioner’s Approach, pp. 151-152, from Cockburn,
 A., Writing Effective Use-Cases, Addison-Wesley, 2001)
