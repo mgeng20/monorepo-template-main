@@ -1,6 +1,8 @@
-import pytest
+
 from fastapi.testclient import TestClient
 from src.main import app
+
+
 
 client = TestClient(app)
 
@@ -28,14 +30,13 @@ def test_get_first_apiV3():
     assert response.status_code == 200
     assert response.json() == {"msg": "BookTitle"}
 
-# Test for GET request to /books/create_book with a JSON body
+
 
 
 def test_get_first_apiV4():
-    payload = {"book_title": "New Book", "author": "John Doe"}
-    response = client.get("/books/create_book", json=payload)
+    response = client.get("/books/create_book/Harry%20Potter?author=J.K%20Rowling")
     assert response.status_code == 200
-    assert response.json() == {"msg": payload}
+    assert response.json() == {"msg": "new book Harry Potter author J.K Rowling"}
 
 # Test for POST request to /api
 

@@ -18,20 +18,20 @@ def first_apiV3(title: str):
     return {"msg": title}
 
 
-@app.get("/books/create_book")
-def first_apiV4(new_book=Body()):
-    print(new_book)
-    return {"msg": new_book}
+
+@app.get("/books/create_book/{title}")
+def first_apiV4(title, author):
+    return {"msg": f"new book {title} author {author}" }
 
 
 @app.post("/api")
 def first_post_api():
-    return {"msg", "post api"}
+    return {"msg": "post api"}
 
 
 @app.put("/api")
 def put_something():
-    return {"msg", "put api"}
+    return {"msg": "put api"}
 
 
 @app.delete("/delete/something")
